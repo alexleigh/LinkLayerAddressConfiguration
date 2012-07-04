@@ -2,10 +2,10 @@
 
 def main(args):
     conf = plistlib.readPlist('/Library/Preferences/SystemConfiguration/LinkLayerAddresses.plist')
-    interfaces = conf['interfaces']
+    interfaces = conf['Interfaces']
     for interface in interfaces:
-        name = interface['name']
-        lladdr = interface['lladdr']
+        name = interface['Name']
+        lladdr = interface['LinkLayerAddress']
         os.system('/sbin/ifconfig %s lladdr %s' % (name, lladdr))
 
 if __name__ == '__main__':
