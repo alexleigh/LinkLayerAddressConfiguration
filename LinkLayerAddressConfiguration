@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import os, sys, plistlib
+
 def main(args):
     conf = plistlib.readPlist('/Library/Preferences/SystemConfiguration/LinkLayerAddresses.plist')
     interfaces = conf['Interfaces']
