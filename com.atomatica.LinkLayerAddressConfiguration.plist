@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC -//Apple Computer//DTD PLIST 1.0//EN
+http://www.apple.com/DTDs/PropertyList-1.0.dtd >
+<plist version="1.0">
+<dict>
+     <key>Label</key>
+     <string>com.atomatica.LinkLayerAddressConfiguration</string>
+     <key>ProgramArguments</key>
+     <array>
+         <string>/Library/SystemConfiguration/LinkLayerAddressConfiguration</string>
+     </array>
+     <key>KeepAlive</key>
+     <dict>
+         <key>NetworkState</key>
+         <true/>
+     </dict>
+     <key>LaunchOnlyOnce</key>
+     <true/>
+</dict>
+</plist>
